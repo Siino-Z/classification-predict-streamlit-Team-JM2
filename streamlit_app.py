@@ -26,19 +26,19 @@ from wordcloud import WordCloud
 from collections import Counter
 
 # Vectorizer
-news_vectorizer = open("resources/vectorizer.pkl", "rb")
+news_vectorizer = open("Data/vectorizer.pkl", "rb")
 vectorizer = joblib.load(news_vectorizer)
 
 # Load raw data
-raw = pd.read_csv("resources/train.csv")
+raw = pd.read_csv("Data/train.csv")
 
 # Load final data after cleaning
-train_final = pd.read_csv("resources/train_final.csv")
-test_final = pd.read_csv("resources/test_final.csv")
+train_final = pd.read_csv("Data/train_final.csv")
+test_final = pd.read_csv("Data/test_final.csv")
 
 # Load the balanced training data after preprocessing
-train_final_balanced = load_npz("resources/train_final_balanced.npz")
-y_train_final_balanced = pd.read_csv("resources/y_train_final_balanced.csv")
+train_final_balanced = load_npz("Data/train_final_balanced.npz")
+y_train_final_balanced = pd.read_csv("Data/y_train_final_balanced.csv")
 
 # Load pre-trained models
 ridge_model = joblib.load(open(os.path.join("Trained_models/ridge_model.pkl"), "rb"))
