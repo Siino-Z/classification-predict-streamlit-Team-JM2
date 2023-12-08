@@ -6,7 +6,7 @@ import os
 # Data dependencies
 import pandas as pd
 from scipy.sparse import load_npz
-from text_preprocessing import preprocess_text, tokenize_data, lemmatize_data
+from app_resources.text_preprocessing import preprocess_text, tokenize_data, lemmatize_data
 
 # Text preprocessing and vectorization dependencies
 import re
@@ -142,9 +142,9 @@ def main():
         # Sample code for adding a bar chart (replace with your actual model comparison visuals)
         comparison_data = {
             "Model": ["Ridge Classifier", "SDG Classifier", "Support Vector Machine"],
-            "Precision": [0.85, 0.88, 0.90],
-            "Recall": [0.78, 0.85, 0.88],
-            "F1 Score": [0.81, 0.86, 0.89],
+            "Precision": [0.75, 0.74, 0.75],
+            "Recall": [0.74, 0.72, 0.74],
+            "F1 Score": [0.74, 0.73, 0.74],
         }
 
         comparison_df = pd.DataFrame(comparison_data)
