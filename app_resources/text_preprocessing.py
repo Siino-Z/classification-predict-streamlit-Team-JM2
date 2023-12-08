@@ -1,6 +1,10 @@
 
 
 # Function to preprocess text (remove emojis, links, mentions, hashtags, expand contractions, and normalize case)
+import re
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+
 def preprocess_text(text):
     # Change the case of all the words in the text to lowercase
     text = text.lower()
