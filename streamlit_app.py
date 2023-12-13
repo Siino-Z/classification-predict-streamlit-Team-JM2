@@ -1,5 +1,6 @@
 import os
 import joblib
+from scipy import sparse
 from sklearn import feature_selection
 from sklearn.datasets import make_classification
 from sklearn.feature_selection import f_classif
