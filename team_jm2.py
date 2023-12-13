@@ -143,11 +143,11 @@ elif page == "Twitter Sentiment":
     tweet_text = st.text_area("Enter Tweet", "Type Here")
 
     # Load the vectorizer
-    news_vectorizer = open("resources/vectorizer.pkl", "rb")
+    news_vectorizer = open("Data/vectorizer.pkl", "rb")
     tweet_cv = joblib.load(news_vectorizer)
 
     # Load your raw data
-    raw = pd.read_csv("resources/train.csv")
+    raw = pd.read_csv("Data/train.csv")
 
     # Assuming 'features' is the list of features you want to one-hot encode
     features = ['sentiment', 'tweetid','message'] 
@@ -360,7 +360,7 @@ elif page == "Feedback":
     </style>
     <div class="footer">
         <p>Built with ❤️ WAKANDA TECH TEAM © 2023 Streamlit Sentiment Analysis</p>
-        <p>Check out the code on <a href="https://github.com/Siino-Z/Classification-Sprint-2307FTDS-Team-JM2.git" style="color: black;">GitHub</a></p>
+        <p>Check out the code on <a href="https://github.com/Siino-Z/classification-predict-streamlit-Team-JM2.git" style="color: black;">GitHub</a></p>
     </div>
     """,
     unsafe_allow_html=True
