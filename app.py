@@ -12,7 +12,7 @@ from sklearn.linear_model import RidgeClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 # Load the data
-train_cleaned = pd.read_csv('train.csv')
+train_cleaned = pd.read_csv('Data/train.csv')
 
 # Initial setup
 st.set_page_config(page_title="Climate Sentiment Analysis", page_icon=":earth_africa:")
@@ -63,7 +63,7 @@ def model_comparison():
     st.markdown("<div class='header'>Model Comparison</div>", unsafe_allow_html=True)
 
     # Load the data
-    train_cleaned = pd.read_csv('train.csv')
+    train_cleaned = pd.read_csv('Data/train.csv')
 
     # Split the data into features (X) and target (y)
     X = train_cleaned['message']
@@ -113,7 +113,7 @@ def visual_representation():
     st.markdown("<div class='header'>Visual Representation of Model Data</div>", unsafe_allow_html=True)
 
     # Load the data
-    train_cleaned = pd.read_csv('train.csv')
+    train_cleaned = pd.read_csv('Data/train.csv')
 
     # Split the data into features (X) and target (y)
     X = train_cleaned['message']
